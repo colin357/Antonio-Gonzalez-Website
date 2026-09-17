@@ -165,15 +165,7 @@ h1 em { font-style: italic; color: var(--olive); font-weight: 300; }
   align-items: center;
 }
 .hero__copy h1 { margin-bottom: .35em; }
-.hero__actions { display: flex; gap: 14px; flex-wrap: wrap; margin: 30px 0 38px; }
-.hero__proof {
-  list-style: none; display: flex; flex-wrap: wrap; gap: 10px 28px;
-  font-size: .9rem; color: var(--ink-soft);
-}
-.hero__proof li { display: flex; align-items: center; gap: 8px; }
-.hero__proof li::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--clay); }
-.hero__proof strong { color: var(--ink); font-weight: 600; }
-
+.hero__actions { display: flex; gap: 14px; flex-wrap: wrap; margin: 30px 0 0; }
 .hero__photo { position: relative; justify-self: end; width: min(100%, 440px); }
 .photo-frame {
   border-radius: 220px 220px var(--radius) var(--radius);
