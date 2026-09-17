@@ -216,13 +216,6 @@ section { padding: clamp(72px, 9vw, 130px) 0; }
 .about__grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(36px, 6vw, 96px); }
 .about__aside h2 { position: sticky; top: 110px; }
 .about__body p { font-size: 1.08rem; color: var(--ink-soft); }
-.values {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
-  margin-top: 44px; padding-top: 40px; border-top: 1px solid var(--line);
-}
-.value__num { font-family: var(--display); color: var(--clay); font-size: 1.1rem; display: block; margin-bottom: 14px; }
-.value h3 { font-size: 1.15rem; margin-bottom: .4em; }
-.value p { font-size: .93rem; margin: 0; }
 
 /* Loans ------------------------------------------------------------ */
 .loan-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
@@ -402,7 +395,6 @@ section { padding: clamp(72px, 9vw, 130px) 0; }
 @media (max-width: 1024px) {
   .loan-grid { grid-template-columns: repeat(2, 1fr); }
   .area-list { grid-template-columns: repeat(3, 1fr); }
-  .values { grid-template-columns: 1fr; gap: 22px; }
   .footer__inner { grid-template-columns: 1fr 1fr; }
 }
 
