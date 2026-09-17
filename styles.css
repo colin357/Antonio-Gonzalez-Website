@@ -241,26 +241,6 @@ section { padding: clamp(72px, 9vw, 130px) 0; }
 .loan-card li { font-size: .88rem; padding: 4px 0 4px 18px; position: relative; }
 .loan-card li::before { content: "✦"; position: absolute; left: 0; color: var(--clay); font-size: .7rem; top: 7px; }
 
-/* Process ---------------------------------------------------------- */
-.process { background: var(--cream); }
-.process__grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: clamp(36px, 6vw, 96px); align-items: start; }
-.process__intro p { color: var(--ink-soft); font-size: 1.08rem; margin-bottom: 30px; }
-.process__intro { position: sticky; top: 110px; }
-.steps { list-style: none; counter-reset: step; }
-.step {
-  display: grid; grid-template-columns: 64px 1fr; gap: 22px;
-  padding: 30px 0; border-top: 1px solid var(--line);
-}
-.step:last-child { border-bottom: 1px solid var(--line); }
-.step__num {
-  width: 52px; height: 52px; border-radius: 50%;
-  border: 1.5px solid var(--olive); color: var(--olive);
-  font-family: var(--display); font-size: 1.3rem;
-  display: grid; place-items: center;
-}
-.step h3 { margin-bottom: .3em; }
-.step p { color: var(--ink-soft); margin: 0; }
-
 /* FAQ -------------------------------------------------------------- */
 .faq { background: var(--cream); }
 .faq__grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(36px, 6vw, 96px); align-items: start; }
@@ -368,8 +348,8 @@ section { padding: clamp(72px, 9vw, 130px) 0; }
   .hero__grid { grid-template-columns: 1fr; }
   .hero__photo { justify-self: center; width: min(100%, 380px); margin-top: 24px; }
   .hero__card { left: 12px; }
-  .about__grid, .process__grid, .faq__grid, .social__inner, .contact__grid { grid-template-columns: 1fr; }
-  .about__aside h2, .process__intro, .faq__intro { position: static; }
+  .about__grid, .faq__grid, .social__inner, .contact__grid { grid-template-columns: 1fr; }
+  .about__aside h2, .faq__intro { position: static; }
   .social__tiles { max-width: 420px; }
 }
 
@@ -381,6 +361,4 @@ section { padding: clamp(72px, 9vw, 130px) 0; }
   .form { padding: 22px; }
   .form__row { grid-template-columns: 1fr; }
   .footer__inner { grid-template-columns: 1fr; }
-  .step { grid-template-columns: 48px 1fr; gap: 16px; }
-  .step__num { width: 42px; height: 42px; font-size: 1.1rem; }
 }
