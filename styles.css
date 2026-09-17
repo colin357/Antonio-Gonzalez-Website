@@ -264,6 +264,8 @@ section { padding: clamp(72px, 9vw, 130px) 0; }
 .social { background: var(--linen); }
 .social__inner { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(36px, 6vw, 96px); align-items: center; }
 .social__copy p { color: var(--ink-soft); font-size: 1.05rem; margin-bottom: 28px; }
+.social__feed { min-height: 320px; }
+.social__live { border-radius: 18px; overflow: hidden; }
 .social__tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .tile {
   aspect-ratio: 1; border-radius: 18px; display: flex; align-items: flex-end; padding: 18px;
