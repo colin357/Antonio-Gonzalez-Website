@@ -71,6 +71,5 @@
   s.src = 'https://w.behold.so/widget.js';
   s.type = 'module';
   s.async = true;
-  s.onerror = () => { location.reload(); };
   document.head.appendChild(s);
 })();
