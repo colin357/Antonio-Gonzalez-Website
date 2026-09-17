@@ -264,21 +264,7 @@ section { padding: clamp(72px, 9vw, 130px) 0; }
 .social { background: var(--linen); }
 .social__inner { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(36px, 6vw, 96px); align-items: center; }
 .social__copy p { color: var(--ink-soft); font-size: 1.05rem; margin-bottom: 28px; }
-.social__feed { min-height: 320px; }
-.social__live { border-radius: 18px; overflow: hidden; }
-.social__tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.tile {
-  aspect-ratio: 1; border-radius: 18px; display: flex; align-items: flex-end; padding: 18px;
-  font-family: var(--display); font-size: 1.15rem; line-height: 1.2;
-  transition: transform .4s var(--ease);
-}
-.tile:hover { transform: rotate(-1.5deg) scale(1.02); }
-.tile--a { background: var(--sage); color: var(--olive-deep); }
-.tile--b { background: var(--olive); color: var(--cream); }
-.tile--c { background: var(--clay-soft); color: var(--olive-deep); }
-.tile--d { background: var(--clay); color: var(--cream); }
-.tile:nth-child(2) { transform: translateY(24px); }
-.tile:nth-child(4) { transform: translateY(24px); }
+.social__feed { min-height: 320px; border-radius: 18px; overflow: hidden; }
 
 /* Contact ---------------------------------------------------------- */
 .contact { background: var(--cream); }
@@ -352,7 +338,6 @@ section { padding: clamp(72px, 9vw, 130px) 0; }
   .hero__card { left: 12px; }
   .about__grid, .faq__grid, .social__inner, .contact__grid { grid-template-columns: 1fr; }
   .about__aside h2, .faq__intro { position: static; }
-  .social__tiles { max-width: 420px; }
 }
 
 @media (max-width: 600px) {

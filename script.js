@@ -22,7 +22,7 @@
   const targets = document.querySelectorAll(
     '.section-head, .about__aside, .about__body, .loan-card, .process__intro, .step, ' +
     '.realtors__copy, .realtors__quote, .area, .faq__intro, .accordion, .social__copy, ' +
-    '.social__tiles, .contact__intro, .form'
+    '.social__feed, .contact__intro, .form'
   );
   targets.forEach(el => el.classList.add('reveal'));
   if ('IntersectionObserver' in window) {
@@ -56,20 +56,3 @@
   document.getElementById('year').textContent = new Date().getFullYear();
 })();
 
-// Live Instagram feed (Behold widget). Activates once a feed ID is set on
-// #instagram-feed via data-behold-id; otherwise the placeholder tiles stay.
-(function () {
-  const wrap = document.getElementById('instagram-feed');
-  if (!wrap) return;
-  const feedId = (wrap.dataset.beholdId || '').trim();
-  if (!feedId) return;
-  const widget = document.createElement('div');
-  widget.setAttribute('data-behold-id', feedId);
-  widget.className = 'social__live';
-  wrap.replaceChildren(widget);
-  const s = document.createElement('script');
-  s.src = 'https://w.behold.so/widget.js';
-  s.type = 'module';
-  s.async = true;
-  document.head.appendChild(s);
-})();

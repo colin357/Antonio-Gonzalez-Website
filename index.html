@@ -207,15 +207,8 @@
           <p>Market updates, first-time buyer tips, and a look behind the scenes of what I do. No fluff.</p>
           <a class="btn btn--solid" href="https://www.instagram.com/antoniogonzalezlending" target="_blank" rel="noopener">@antoniogonzalezlending</a>
         </div>
-        <div class="social__feed" id="instagram-feed" data-behold-id="">
-          <!-- Live feed: paste a Behold feed ID into data-behold-id above and the
-               widget below replaces these placeholder tiles automatically. -->
-          <div class="social__tiles" aria-hidden="true">
-            <div class="tile tile--a"><span>First-time<br>buyer tips</span></div>
-            <div class="tile tile--b"><span>VA loan<br>basics</span></div>
-            <div class="tile tile--c"><span>Sacramento<br>market</span></div>
-            <div class="tile tile--d"><span>Rate<br>updates</span></div>
-          </div>
+        <div class="social__feed">
+          <behold-widget feed-id="Z7G0PviSZEIgjPLpVM1a"></behold-widget>
         </div>
       </div>
     </section>
@@ -294,7 +287,7 @@
         <div>
           <strong>Antonio Gonzalez</strong>
           <span>Loan Officer · American Pacific Mortgage</span>
-          <span>NMLS #000000 <em>(update)</em></span>
+          <span>NMLS #1882833</span>
         </div>
       </div>
       <nav class="footer__links" aria-label="Footer">
@@ -316,5 +309,12 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    (() => {
+      if (window.__bhldScript) return; window.__bhldScript = true;
+      const d = document, s = d.createElement("script"); s.type = "module";
+      s.src = "https://w.behold.so/widget.js"; setTimeout(() => { d.head.append(s); }, 0);
+    })();
+  </script>
 </body>
 </html>
