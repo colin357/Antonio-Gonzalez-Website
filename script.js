@@ -22,7 +22,7 @@
   const targets = document.querySelectorAll(
     '.section-head, .about__aside, .about__body, .loan-card, .process__intro, .step, ' +
     '.realtors__copy, .realtors__quote, .area, .faq__intro, .accordion, .social__copy, ' +
-    '.social__feed, .contact__intro, .form'
+    '.social__feed, .review-card, .contact__intro, .form'
   );
   targets.forEach(el => el.classList.add('reveal'));
   if ('IntersectionObserver' in window) {

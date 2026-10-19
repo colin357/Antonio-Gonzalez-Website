@@ -241,6 +241,23 @@ section { padding: clamp(72px, 9vw, 130px) 0; }
 .loan-card li { font-size: .88rem; padding: 4px 0 4px 18px; position: relative; }
 .loan-card li::before { content: "✦"; position: absolute; left: 0; color: var(--clay); font-size: .7rem; top: 7px; }
 
+/* Reviews ---------------------------------------------------------- */
+.reviews { background: var(--olive-deep); color: var(--cream); }
+.reviews .section-head h2 { color: var(--cream); }
+.review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; align-items: start; }
+.review-card {
+  margin: 0; padding: 32px 28px 28px;
+  background: rgba(251,248,242,.06); border: 1px solid rgba(251,248,242,.12);
+  border-radius: var(--radius);
+  display: flex; flex-direction: column; gap: 18px;
+}
+.review-card__stars { color: var(--clay-soft); letter-spacing: .2em; font-size: .95rem; }
+.review-card blockquote { margin: 0; }
+.review-card blockquote p { margin: 0; font-family: var(--display); font-size: 1.12rem; line-height: 1.5; color: rgba(251,248,242,.92); }
+.review-card figcaption { display: flex; flex-direction: column; gap: 2px; padding-top: 16px; border-top: 1px solid rgba(251,248,242,.12); }
+.review-card__name { font-weight: 600; color: var(--cream); }
+.review-card__meta { font-size: .8rem; color: rgba(251,248,242,.6); }
+
 /* FAQ -------------------------------------------------------------- */
 .faq { background: var(--cream); }
 .faq__grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(36px, 6vw, 96px); align-items: start; }
@@ -327,6 +344,7 @@ section { padding: clamp(72px, 9vw, 130px) 0; }
 /* Responsive ------------------------------------------------------- */
 @media (max-width: 1024px) {
   .loan-grid { grid-template-columns: repeat(2, 1fr); }
+  .review-grid { grid-template-columns: 1fr; max-width: 40rem; margin-inline: auto; }
   .footer__inner { grid-template-columns: 1fr 1fr; }
 }
 
